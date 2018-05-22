@@ -1,0 +1,67 @@
+/**
+
+  datepicker
+-----------------------------------------
+
+  (Mostly) sizing rules for the Namely UI datepicker.
+
+---------------------------------------*/
+
+$day-width: $space-4;
+
+.datepicker {
+  width: $day-width * 7;
+
+  @for $i from 0 through 6 {
+    .day-in-week-#{$i} { left: $day-width * $i; }
+  }
+
+  @for $i from 0 through 5 {
+    .week-#{$i + 1} { top: $day-width * $i; }
+  }
+}
+
+.monthpicker {
+  margin-top: $space-1;
+
+  .icon-chevron-left {
+    left: $space-4;
+  }
+
+  .icon-chevron-right {
+    right: $space-4;
+  }
+}
+
+.daypicker {
+  height: $day-width * 5;
+  width: $day-width * 7;
+
+  &.extra-week {
+    height: $day-width * 6;
+  }
+}
+
+.day {
+
+  div {
+    height: $day-width - $space-1;
+    padding-top: $space-1 / 2;
+    width: $day-width;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &.disabled a:hover {
+    color: $grey-75;
+    cursor: default;
+  }
+}
+
+.week-labels span {
+  // TODO: Replace this with a variable when the style guide typography is updated
+  font-size: 12px;
+  width: $day-width;
+}

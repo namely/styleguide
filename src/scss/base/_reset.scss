@@ -1,0 +1,37 @@
+/**
+
+  reset
+--------------------------------
+
+  This reset institutes block and margin/padding resets.
+
+  Based off of Normalize
+
+------------------------------*/
+
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+  display: block;
+}

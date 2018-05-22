@@ -1,0 +1,22 @@
+/**
+
+  grid
+---------------------------
+
+  THe grid component is made up of grid blocks to display how the column classes work visually.
+
+-------------------------*/
+
+.grid-block {
+  background: $grey-95;
+  color: $grey-3;
+  display: table;
+  height: 2em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.col-class {
+  display: table-cell;
+  vertical-align: middle;
+}

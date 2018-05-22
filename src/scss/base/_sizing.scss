@@ -1,0 +1,41 @@
+/**
+
+  sizing
+-------------------------
+
+  Variables for controlling visual sizing and spacing with utility classes.
+
+-----------------------*/
+
+// Spacing variables for padding and margins
+/** pixels here for reference
+-------------------------------
+  $space-1  =   .3125rem  = 5px
+  $space-2  =   .625rem   = 10px
+  $space-3  =   1.25rem   = 20px
+  $space-4  =   1.875rem  = 30px
+  $space-5  =   2.5rem    = 40px
+-------------------------------*/
+
+// All sizing variables should have the smallest one as a factor
+$space-1: 0.3125rem !default;
+$space-2: $space-1 * 2 !default;
+$space-3: $space-1 * 4 !default;
+$space-4: $space-1 * 6 !default;
+$space-5: $space-1 * 8 !default;
+
+// Sizing variables for typography
+$h1: 2.25rem !default;
+$h2: 1.5rem !default;
+$h3: 1.3rem !default;
+$h4: 1.125rem !default;
+$h5: 1rem !default;
+$h6: 0.875rem !default;
+
+$line-height: 1.375;
+$heading-line-height: 1.1;
+
+$border-radius: 3px;
+
+$duration: 0.1s;
+$duration-2: 0.3s;

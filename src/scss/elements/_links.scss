@@ -1,0 +1,45 @@
+/**
+
+  links
+------------------------------------
+
+  Links, <a> etc. & Webkit tab highlight
+
+----------------------------------*/
+
+/* anchors
+------------------------------------
+
+  Anchors will have this base styling
+
+----------------------------------*/
+
+a {
+  color: $blue-70;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue-80;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+.popover.dark a, // TODO - NUI-debt - just this line
+.tooltip a {
+  color: $blue-25;
+
+  &:hover {
+    color: $white;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}

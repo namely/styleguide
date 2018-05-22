@@ -1,0 +1,25 @@
+machine:
+  node:
+    version: '4.2.1'
+
+dependencies:
+  override:
+    - npm install
+    - gem install scss-lint
+    - npm test
+
+test:
+  override:
+    - echo "TODO"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm install node-slack-cli -g
+      - npm rebuild node-sass
+      - ./node_modules/.bin/gulp build
+      - ./node_modules/.bin/surge --project ./public --domain namely.surge.sh
+      - slack -c namely-ui -m "Deployed style guide to http://namely.surge.sh"
+      - aws s3 sync ./dist s3://namely-styleguide/`echo $CIRCLE_SHA1 | cut -c1-8`/ --acl public-read
+      - slack -c namely-ui -m "Deployed namely-ui.css to https://d1pol32eeyc3ek.cloudfront.net/`echo $CIRCLE_SHA1 | cut -c1-8`"

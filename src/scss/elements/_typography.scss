@@ -1,0 +1,72 @@
+/**
+
+  typogrpahy
+--------------------------
+
+  We set default typographic styles for the body, headings, paragraphs, lists, and other elements.
+
+  Additionally, we add classnames so we can apply the styling of, for instance, an h1 to an h2.
+
+------------------------*/
+
+// Base typography styling
+h1, h2, h3, h4 {
+  line-height: $heading-line-height;
+  margin: $space-2 0;
+}
+
+h5, h6 {
+  line-height: $line-height;
+  margin: $space-1 0;
+}
+
+p {
+  line-height: $line-height;
+  margin: $space-2 0;
+}
+
+p, dl, ol, ul {
+  font-size: $h5;
+}
+
+small, .small {
+  font-size: $h6;
+  line-height: 1;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $grey-25;
+  margin-bottom: $space-3;
+  margin-top: $space-3;
+}
+
+h1, .h1 { font-size: $h1; }
+h2, .h2 { font-size: $h2; }
+h3, .h3 { font-size: $h3; }
+h4, .h4 { font-size: $h4; }
+h5, .h5 { font-size: $h5; }
+h6, .h6 { font-size: $h6; }
+
+.light    { font-weight: $font-light; }
+.regular  { font-weight: $font-regular; }
+.semibold { font-weight: $font-semibold; }
+.bold     { font-weight: $font-bold; }
+.italic   { font-style: italic; }
+.caps     { text-transform: uppercase; }
+
+.left-align  { text-align: left; }
+.center      { text-align: center; }
+.right-align { text-align: right; }
+.justify     { text-align: justify; }
+
+.nowrap { white-space: nowrap; }
+
+.list-reset {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.noselect {
+  user-select: none;
+}

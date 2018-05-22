@@ -1,0 +1,95 @@
+// Secondary Button
+.button-secondary {
+  background: $blue-50;
+
+  &:hover {
+    background: $blue-70;
+  }
+
+  &:active {
+    background: $blue-80;
+  }
+}
+
+.button-baby {
+  background: $blue-25;
+
+  &:hover {
+    background: $blue-70;
+  }
+
+  &:active {
+    background: $blue-80;
+  }
+}
+
+// Danger Button
+.button-danger {
+  background: $orange;
+
+  &:hover {
+    background: $orange-shade;
+  }
+
+  &:active {
+    background: $orange-dark;
+  }
+}
+
+// Link Button
+.button-link {
+  background: none;
+  color: $blue-70;
+  font-size: $h5;
+  font-weight: bold;
+  padding: 0;
+
+  &:hover, &:active {
+    background: none;
+    color: $blue-80;
+  }
+
+  &.button-secondary {
+    color: $blue-50;
+
+    &:hover {
+      color: $blue-70;
+    }
+
+    &:active {
+      color: $blue-80;
+    }
+  }
+
+  &.button-danger {
+    color: $orange;
+
+    &:hover {
+      color: $orange-shade;
+    }
+
+    &:active {
+      color: $orange-dark;
+    }
+  }
+
+  &.button-baby {
+    color: $blue-25;
+
+    &:hover {
+      color: $blue-70;
+    }
+
+    &:active {
+      color: $blue-80;
+    }
+  }
+
+  &.button-sm {
+    padding: 0;
+  }
+
+  &:disabled, &.button-disabled {
+    color: $grey-25;
+  }
+}

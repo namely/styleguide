@@ -1,0 +1,39 @@
+.button-group {
+  padding: $space-3;
+  text-align: left;
+
+  button:not(.button-previous), .button:not(.button-previous) {
+    margin-left: $space-2;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.button-group-actions {
+  @extend %flex;
+  border-top: 1px solid $grey-10;
+  justify-content: flex-end;
+
+  .button-group {
+    @extend %flex-auto;
+    padding: 0;
+  }
+
+  .button-group:last-child {
+    text-align: right;
+
+    button, .button {
+      margin-left: 0;
+    }
+
+    button:not(.button-next), .button:not(.button-next) {
+      margin-right: $space-2;
+    }
+
+    button:not(.button-next):last-child, .button:not(.button-next):last-child {
+      margin-right: 0;
+    }
+  }
+}

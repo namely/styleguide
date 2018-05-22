@@ -1,0 +1,36 @@
+/**
+
+  grid
+--------------------------------
+
+  The grid is made up of utility classes that refer to the number of columns out of a 12 column system.
+
+------------------------------*/
+
+// Container class
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 67.5em;
+}
+
+// Our base column classes
+@for $i from 1 through 12 {
+  // loops through these numbers and spits out the needed grid classes
+  .col-#{$i} {
+    float: left;
+    width: calc(#{$i}/12 * 100%);
+  }
+}
+
+.fit {
+  max-width: 100%;
+}
+
+.fill {
+  width: 100%;
+}
+
+.tall {
+  height: 100%;
+}

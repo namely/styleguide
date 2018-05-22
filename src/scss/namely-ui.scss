@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Proxima';
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.eot');
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.eot?#iefix') format('embedded-opentype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.woff') format('woff'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.ttf') format('truetype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.eot');
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.eot?#iefix') format('embedded-opentype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.woff') format('woff'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.ttf') format('truetype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.svg#proxima_nova_ltsemibold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.eot');
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.eot?#iefix') format('eot'),
+    url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.woff') format('woff'),
+    url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.ttf') format('truetype'),
+    url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.svg#icons') format('svg');
+}
+
+
+// Wrap all selectors in .namely-ui namespace to eliminate style clash
+// in the consuming applications
+.namely-ui {
+  @import './src/scss/app';
+}

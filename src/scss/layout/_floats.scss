@@ -1,0 +1,33 @@
+/**
+
+  floats
+-------------------------
+
+  Utility classes for setting the float style for an element.
+
+------------------------*/
+
+.clearfix {
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}

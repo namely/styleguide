@@ -1,0 +1,59 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+thead tr th {
+  border-bottom: 3px solid $grey-25;
+}
+
+thead .secondary {
+  th {
+    border-bottom: 0;
+  }
+
+  th:last-child {
+    border-bottom: 1px solid $grey-25;
+    color: $grey-50;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+th {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: $space-2;
+  text-align: left;
+  vertical-align: bottom;
+
+}
+
+th,
+td {
+  line-height: inherit;
+}
+
+td {
+  padding: $space-2;
+  vertical-align: top;
+}
+
+tbody tr {
+
+  &:hover {
+    background-color: $grey-5;
+  }
+
+  td {
+    border-bottom: 1px solid $grey-5;
+    margin-bottom: 0rem;
+  }
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+

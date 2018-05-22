@@ -1,0 +1,56 @@
+/**
+
+  buttons
+-------------------------------------
+
+  Various button styles
+
+-----------------------------------*/
+
+$base-button-font-size: $h4;
+
+button,
+.button {
+  appearance: none;
+  background: $blue-70;
+  border: 0;
+  border-radius: $border-radius;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $base-button-font-size;
+  font-weight: normal;
+  height: auto;
+  line-height: $base-button-font-size;
+  outline: none;
+  padding: $space-1 * 1.5 $space-2;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  transition: background 0s, color 0s;
+  vertical-align: middle;
+
+  &:hover,
+  &:active {
+    background: $blue-80;
+    text-decoration: none;
+    transition: background $duration, color $duration;
+  }
+
+  &::before {
+    font-size: $h5;
+    line-height: $base-button-font-size;
+    margin-right: $space-1;
+  }
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@import 'types';
+@import 'sizes';
+@import 'directions';
+@import 'disabled';
+@import 'groups';

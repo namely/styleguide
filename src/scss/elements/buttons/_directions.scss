@@ -1,0 +1,93 @@
+$directional-button-height: (($space-1 * 1.5) * 2) + $base-button-font-size;
+$arrow-dimensions: $directional-button-height * 0.75;
+$arrow-position: -($h2 / 2);
+$arrow-top: ($directional-button-height * 0.25) / 2;
+
+.button-previous {
+  background: $blue-50;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-left: 1em;
+  padding-left: $space-1;
+
+  &::before {
+    background: $blue-50;
+    content: '';
+    height: $arrow-dimensions;
+    left: $arrow-position;
+    transition: background 0s;
+    width: $arrow-dimensions;
+  }
+
+  &:hover {
+    background: $blue-70;
+
+    &::before {
+      background: $blue-70;
+    }
+  }
+
+  &:active {
+    background: $blue-80;
+
+    &::before {
+      background: $blue-80;
+    }
+  }
+}
+
+.button-next {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-right: 1em;
+  padding-right: $space-1;
+
+  &::after {
+    background: $blue-70;
+    content: '';
+    height: $arrow-dimensions;
+    right: $arrow-position;
+    width: $arrow-dimensions;
+  }
+
+  &:hover {
+
+    &::after {
+      background: $blue-80;
+    }
+  }
+}
+
+.button-previous,
+.button-next {
+  position: relative;
+  transform: translateZ(0px);
+  z-index: 20;
+
+  &::after,
+  &::before {
+    border-radius: $border-radius;
+    display: block;
+    line-height: $base-button-font-size;
+    position: absolute;
+    top: $arrow-top;
+    transform: rotate(45deg) translateZ(0px);
+    z-index: -1;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      transition: background $duration;
+    }
+  }
+
+  &:active {
+
+    &::before,
+    &::after {
+      background: $blue-80;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/**
+
+  components
+------------------------------
+
+  Reusuable objects that are combinations of elements and other components.
+
+  When you create a new component, make sure the partial is in the component directory and import it below.
+
+----------------------------*/
+
+@import 'grid';
+
+@import 'triangle';
+
+@import 'modal';
+
+@import 'accordions';
+
+@import 'tooltip';

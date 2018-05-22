@@ -1,0 +1,38 @@
+/**
+
+  positions
+--------------------------
+
+  The position styles for an element with these utility classes
+
+------------------------*/
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+// Anchoring classes
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}

@@ -1,0 +1,8 @@
+.DS_Store
+dump.rdb
+node_modules/
+npm-debug.log*
+public/app.css
+public/app.css.map
+public/app.js
+public/fonts/

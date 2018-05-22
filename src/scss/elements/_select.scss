@@ -1,0 +1,216 @@
+/**
+ * React Select
+ * ============
+ * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+ * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+ * MIT License: https://github.com/keystonejs/react-select
+*/
+
+$select-height: 3.25rem;
+
+.Select {
+  position: relative;
+
+  &.is-multi {
+    .Select-control {
+      padding: $space-2 $select-height $space-2 $space-2;
+    }
+
+    .Select-input {
+      vertical-align: middle;
+    }
+  }
+}
+
+.Select-control {
+  background-color: $white;
+  border: 1px solid $grey-10;
+  border-radius: 3px;
+  color: $grey-25;
+  cursor: default;
+  outline: none;
+  overflow: hidden;
+  padding: $space-2 $select-height $space-2 $space-2;
+  position: relative;
+}
+
+// .Select-control:hover {}
+
+.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+
+.is-open > .Select-control {
+  background: $white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: $grey-25;
+
+  > .Select-arrow {
+    border-color: transparent transparent $grey-25;
+    border-width: 0 5px 5px;
+  }
+}
+
+.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+
+// .is-focused:not(.is-open) > .Select-control {}
+
+.Select-placeholder {
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding: $space-2 $select-height $space-2 $space-2;
+  position: absolute;
+  right: -15px;
+  text-overflow: ellipsis;
+  top: 0;
+  white-space: nowrap;
+}
+
+.has-value > .Select-control > .Select-placeholder {
+  color: $grey-75;
+}
+
+.Select-input > input {
+  -webkit-appearance: none;
+  background: none transparent;
+  border: 0 none;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+.is-focused .Select-input > input {
+  cursor: text;
+}
+
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+
+// .Select-loading {}
+
+.has-value > .Select-control > .Select-loading {
+  right: 46px;
+}
+
+.Select-clear {
+  color: $grey-25;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  padding: 6px 10px;
+  position: absolute;
+  right: 17px;
+  top: 0;
+
+  > span {
+    font-size: 1.1em;
+  }
+}
+
+// .Select-clear:hover {}
+
+.Select-arrow {
+  @include icon(arrow-double);
+  color: $blue-70;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+.Select-menu-outer {
+  background-color: $white;
+  border: 1px solid $grey-10;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+}
+
+.Select-option {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+
+  &.is-focused {
+    background-color: $grey-10;
+  }
+}
+
+.Select-option:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+.Select-noresults {
+  box-sizing: border-box;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+
+.Select-item {
+  background-color: $white;
+  border: 1px solid $grey-25;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1em;
+  margin: 2px;
+}
+
+.Select-item-icon,
+.Select-item-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Select-item-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  color: $grey-75;
+  cursor: default;
+  padding: 3px 5px;
+
+  .Select-item-label__a {
+    cursor: pointer;
+  }
+}
+
+
+.Select-item-icon {
+  border-bottom-left-radius: 2px;
+  border-right: 1px solid $grey-25;
+  border-top-left-radius: 2px;
+  cursor: pointer;
+  padding: 2px 5px 4px;
+}
+
+.Select-item-icon:hover,
+.Select-item-icon:focus {
+  background-color: $grey-5;
+}
+
+.Select-item-icon:active {
+  background-color: $grey-5;
+}

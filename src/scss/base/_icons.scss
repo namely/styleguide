@@ -1,0 +1,629 @@
+@font-face {
+  font-family: 'icons';
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.eot');
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.eot?#iefix') format('eot'),
+    url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.woff') format('woff'),
+    url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.ttf') format('truetype'),
+    url('https://dzmqh46i6l1ir.cloudfront.net/public/namely-ui.icons.svg#icons') format('svg');
+}
+
+%icon {
+  font-family: 'icons';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+@function icon-char($filename) {
+  $char: '';
+
+  @if $filename == alert {
+    $char: '\E001';
+  }
+  @if $filename == api {
+    $char: '\E002';
+  }
+  @if $filename == arrow-double {
+    $char: '\E003';
+  }
+  @if $filename == arrow-down {
+    $char: '\E004';
+  }
+  @if $filename == arrow-left {
+    $char: '\E005';
+  }
+  @if $filename == arrow-right {
+    $char: '\E006';
+  }
+  @if $filename == arrow-up {
+    $char: '\E007';
+  }
+  @if $filename == asterisk {
+    $char: '\E008';
+  }
+  @if $filename == bell {
+    $char: '\E009';
+  }
+  @if $filename == cake {
+    $char: '\E00A';
+  }
+  @if $filename == calendar {
+    $char: '\E00B';
+  }
+  @if $filename == check {
+    $char: '\E00C';
+  }
+  @if $filename == chevron-left {
+    $char: '\E00D';
+  }
+  @if $filename == chevron-right {
+    $char: '\E00E';
+  }
+  @if $filename == clipboard-check {
+    $char: '\E00F';
+  }
+  @if $filename == clipboard-paste {
+    $char: '\E010';
+  }
+  @if $filename == clipboard {
+    $char: '\E011';
+  }
+  @if $filename == clock {
+    $char: '\E012';
+  }
+  @if $filename == collapse {
+    $char: '\E013';
+  }
+  @if $filename == copy {
+    $char: '\E014';
+  }
+  @if $filename == delete-inverted {
+    $char: '\E015';
+  }
+  @if $filename == delete {
+    $char: '\E016';
+  }
+  @if $filename == denied {
+    $char: '\E017';
+  }
+  @if $filename == disabled {
+    $char: '\E018';
+  }
+  @if $filename == document-blank {
+    $char: '\E019';
+  }
+  @if $filename == document {
+    $char: '\E01A';
+  }
+  @if $filename == download {
+    $char: '\E01B';
+  }
+  @if $filename == drag {
+    $char: '\E01C';
+  }
+  @if $filename == email {
+    $char: '\E01D';
+  }
+  @if $filename == exit {
+    $char: '\E01E';
+  }
+  @if $filename == expand {
+    $char: '\E01F';
+  }
+  @if $filename == export {
+    $char: '\E020';
+  }
+  @if $filename == feed {
+    $char: '\E021';
+  }
+  @if $filename == flag {
+    $char: '\E022';
+  }
+  @if $filename == flagpole {
+    $char: '\E023';
+  }
+  @if $filename == folder-open {
+    $char: '\E024';
+  }
+  @if $filename == folder {
+    $char: '\E025';
+  }
+  @if $filename == graph {
+    $char: '\E026';
+  }
+  @if $filename == heart-outline {
+    $char: '\E027';
+  }
+  @if $filename == heart {
+    $char: '\E028';
+  }
+  @if $filename == help {
+    $char: '\E029';
+  }
+  @if $filename == home {
+    $char: '\E02A';
+  }
+  @if $filename == key {
+    $char: '\E02B';
+  }
+  @if $filename == link {
+    $char: '\E02C';
+  }
+  @if $filename == list {
+    $char: '\E02D';
+  }
+  @if $filename == location {
+    $char: '\E02E';
+  }
+  @if $filename == lock {
+    $char: '\E02F';
+  }
+  @if $filename == mobile {
+    $char: '\E030';
+  }
+  @if $filename == namely-inverted {
+    $char: '\E031';
+  }
+  @if $filename == namely {
+    $char: '\E032';
+  }
+  @if $filename == paperclip {
+    $char: '\E033';
+  }
+  @if $filename == pencil {
+    $char: '\E034';
+  }
+  @if $filename == people {
+    $char: '\E035';
+  }
+  @if $filename == person-add {
+    $char: '\E036';
+  }
+  @if $filename == person {
+    $char: '\E037';
+  }
+  @if $filename == phone {
+    $char: '\E038';
+  }
+  @if $filename == pin {
+    $char: '\E039';
+  }
+  @if $filename == plane {
+    $char: '\E03A';
+  }
+  @if $filename == print {
+    $char: '\E03B';
+  }
+  @if $filename == search {
+    $char: '\E03C';
+  }
+  @if $filename == settings {
+    $char: '\E03D';
+  }
+  @if $filename == social-fb {
+    $char: '\E03E';
+  }
+  @if $filename == social-google {
+    $char: '\E03F';
+  }
+  @if $filename == social-googleplus {
+    $char: '\E040';
+  }
+  @if $filename == social-linkedin {
+    $char: '\E041';
+  }
+  @if $filename == social-tumblr {
+    $char: '\E042';
+  }
+  @if $filename == social-twitter {
+    $char: '\E043';
+  }
+  @if $filename == star {
+    $char: '\E044';
+  }
+  @if $filename == tag {
+    $char: '\E045';
+  }
+  @if $filename == tags {
+    $char: '\E046';
+  }
+  @if $filename == team {
+    $char: '\E047';
+  }
+  @if $filename == upload {
+    $char: '\E048';
+  }
+  @if $filename == view-stop {
+    $char: '\E049';
+  }
+  @if $filename == view {
+    $char: '\E04A';
+  }
+  @return $char;
+}
+
+$icon-alert: '\E001';
+$icon-api: '\E002';
+$icon-arrow-double: '\E003';
+$icon-arrow-down: '\E004';
+$icon-arrow-left: '\E005';
+$icon-arrow-right: '\E006';
+$icon-arrow-up: '\E007';
+$icon-asterisk: '\E008';
+$icon-bell: '\E009';
+$icon-cake: '\E00A';
+$icon-calendar: '\E00B';
+$icon-check: '\E00C';
+$icon-chevron-left: '\E00D';
+$icon-chevron-right: '\E00E';
+$icon-clipboard-check: '\E00F';
+$icon-clipboard-paste: '\E010';
+$icon-clipboard: '\E011';
+$icon-clock: '\E012';
+$icon-collapse: '\E013';
+$icon-copy: '\E014';
+$icon-delete-inverted: '\E015';
+$icon-delete: '\E016';
+$icon-denied: '\E017';
+$icon-disabled: '\E018';
+$icon-document-blank: '\E019';
+$icon-document: '\E01A';
+$icon-download: '\E01B';
+$icon-drag: '\E01C';
+$icon-email: '\E01D';
+$icon-exit: '\E01E';
+$icon-expand: '\E01F';
+$icon-export: '\E020';
+$icon-feed: '\E021';
+$icon-flag: '\E022';
+$icon-flagpole: '\E023';
+$icon-folder-open: '\E024';
+$icon-folder: '\E025';
+$icon-graph: '\E026';
+$icon-heart-outline: '\E027';
+$icon-heart: '\E028';
+$icon-help: '\E029';
+$icon-home: '\E02A';
+$icon-key: '\E02B';
+$icon-link: '\E02C';
+$icon-list: '\E02D';
+$icon-location: '\E02E';
+$icon-lock: '\E02F';
+$icon-mobile: '\E030';
+$icon-namely-inverted: '\E031';
+$icon-namely: '\E032';
+$icon-paperclip: '\E033';
+$icon-pencil: '\E034';
+$icon-people: '\E035';
+$icon-person-add: '\E036';
+$icon-person: '\E037';
+$icon-phone: '\E038';
+$icon-pin: '\E039';
+$icon-plane: '\E03A';
+$icon-print: '\E03B';
+$icon-search: '\E03C';
+$icon-settings: '\E03D';
+$icon-social-fb: '\E03E';
+$icon-social-google: '\E03F';
+$icon-social-googleplus: '\E040';
+$icon-social-linkedin: '\E041';
+$icon-social-tumblr: '\E042';
+$icon-social-twitter: '\E043';
+$icon-star: '\E044';
+$icon-tag: '\E045';
+$icon-tags: '\E046';
+$icon-team: '\E047';
+$icon-upload: '\E048';
+$icon-view-stop: '\E049';
+$icon-view: '\E04A';
+
+
+@mixin icon($filename, $insert: before) {
+  &:#{$insert} {
+    @extend %icon;
+    content: icon-char($filename);
+  }
+}
+
+.icon-alert {
+  @include icon(alert);
+}
+
+.icon-api {
+  @include icon(api);
+}
+
+.icon-arrow-double {
+  @include icon(arrow-double);
+}
+
+.icon-arrow-down {
+  @include icon(arrow-down);
+}
+
+.icon-arrow-left {
+  @include icon(arrow-left);
+}
+
+.icon-arrow-right {
+  @include icon(arrow-right);
+}
+
+.icon-arrow-up {
+  @include icon(arrow-up);
+}
+
+.icon-asterisk {
+  @include icon(asterisk);
+}
+
+.icon-bell {
+  @include icon(bell);
+}
+
+.icon-cake {
+  @include icon(cake);
+}
+
+.icon-calendar {
+  @include icon(calendar);
+}
+
+.icon-check {
+  @include icon(check);
+}
+
+.icon-chevron-left {
+  @include icon(chevron-left);
+}
+
+.icon-chevron-right {
+  @include icon(chevron-right);
+}
+
+.icon-clipboard-check {
+  @include icon(clipboard-check);
+}
+
+.icon-clipboard-paste {
+  @include icon(clipboard-paste);
+}
+
+.icon-clipboard {
+  @include icon(clipboard);
+}
+
+.icon-clock {
+  @include icon(clock);
+}
+
+.icon-collapse {
+  @include icon(collapse);
+}
+
+.icon-copy {
+  @include icon(copy);
+}
+
+.icon-delete-inverted {
+  @include icon(delete-inverted);
+}
+
+.icon-delete {
+  @include icon(delete);
+}
+
+.icon-denied {
+  @include icon(denied);
+}
+
+.icon-disabled {
+  @include icon(disabled);
+}
+
+.icon-document-blank {
+  @include icon(document-blank);
+}
+
+.icon-document {
+  @include icon(document);
+}
+
+.icon-download {
+  @include icon(download);
+}
+
+.icon-drag {
+  @include icon(drag);
+}
+
+.icon-email {
+  @include icon(email);
+}
+
+.icon-exit {
+  @include icon(exit);
+}
+
+.icon-expand {
+  @include icon(expand);
+}
+
+.icon-export {
+  @include icon(export);
+}
+
+.icon-feed {
+  @include icon(feed);
+}
+
+.icon-flag {
+  @include icon(flag);
+}
+
+.icon-flagpole {
+  @include icon(flagpole);
+}
+
+.icon-folder-open {
+  @include icon(folder-open);
+}
+
+.icon-folder {
+  @include icon(folder);
+}
+
+.icon-graph {
+  @include icon(graph);
+}
+
+.icon-heart-outline {
+  @include icon(heart-outline);
+}
+
+.icon-heart {
+  @include icon(heart);
+}
+
+.icon-help {
+  @include icon(help);
+}
+
+.icon-home {
+  @include icon(home);
+}
+
+.icon-key {
+  @include icon(key);
+}
+
+.icon-link {
+  @include icon(link);
+}
+
+.icon-list {
+  @include icon(list);
+}
+
+.icon-location {
+  @include icon(location);
+}
+
+.icon-lock {
+  @include icon(lock);
+}
+
+.icon-mobile {
+  @include icon(mobile);
+}
+
+.icon-namely-inverted {
+  @include icon(namely-inverted);
+}
+
+.icon-namely {
+  @include icon(namely);
+}
+
+.icon-paperclip {
+  @include icon(paperclip);
+}
+
+.icon-pencil {
+  @include icon(pencil);
+}
+
+.icon-people {
+  @include icon(people);
+}
+
+.icon-person-add {
+  @include icon(person-add);
+}
+
+.icon-person {
+  @include icon(person);
+}
+
+.icon-phone {
+  @include icon(phone);
+}
+
+.icon-pin {
+  @include icon(pin);
+}
+
+.icon-plane {
+  @include icon(plane);
+}
+
+.icon-print {
+  @include icon(print);
+}
+
+.icon-search {
+  @include icon(search);
+}
+
+.icon-settings {
+  @include icon(settings);
+}
+
+.icon-social-fb {
+  @include icon(social-fb);
+}
+
+.icon-social-google {
+  @include icon(social-google);
+}
+
+.icon-social-googleplus {
+  @include icon(social-googleplus);
+}
+
+.icon-social-linkedin {
+  @include icon(social-linkedin);
+}
+
+.icon-social-tumblr {
+  @include icon(social-tumblr);
+}
+
+.icon-social-twitter {
+  @include icon(social-twitter);
+}
+
+.icon-star {
+  @include icon(star);
+}
+
+.icon-tag {
+  @include icon(tag);
+}
+
+.icon-tags {
+  @include icon(tags);
+}
+
+.icon-team {
+  @include icon(team);
+}
+
+.icon-upload {
+  @include icon(upload);
+}
+
+.icon-view-stop {
+  @include icon(view-stop);
+}
+
+.icon-view {
+  @include icon(view);
+}
+

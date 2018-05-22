@@ -1,0 +1,59 @@
+.anim-fade {
+  animation-duration: $duration-2;
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.c-fade {
+  transition: color $duration;
+}
+
+.anim-fade-top-appear {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all $duration ease-out;
+
+  &.anim-fade-top-appear-active {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.anim-fade-right-appear {
+  opacity: 0;
+  transform: translateX(5px);
+  transition: all $duration ease-out;
+
+  &.anim-fade-top-active-appear {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.anim-fade-bottom-appear {
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all $duration ease-out;
+
+  &.anim-fade-top-active-appear {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.anim-fade-left-appear {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all $duration ease-out;
+
+  &.anim-fade-top-active-appear {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

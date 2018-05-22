@@ -1,0 +1,40 @@
+/****
+
+  states
+
+**********************
+
+  Utility classes for interaction states that can be used around a site.
+
+  i.e. .is-selected, .hover-container > .hover-show
+
+*********************/
+
+.hover-show {
+  opacity: 0;
+  transition: opacity $duration-2 ease-in-out;
+}
+
+.hover-container:hover .hover-show {
+  opacity: 1;
+}
+
+.hover-danger:hover {
+  color: $orange;
+}
+
+.hover-row:hover {
+  background: $grey-5;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.is-open {
+  height: auto;
+}
+
+.is-closed {
+  height: 0;
+}

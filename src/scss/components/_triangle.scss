@@ -1,0 +1,40 @@
+/**********
+
+  Triangle Shape Component
+
+**************************
+
+  A simple component for creating a triangle shape in several directions
+
+*************************/
+
+$triangle-size: $space-2;
+
+.triangle-bottom {
+  border-left: $triangle-size solid transparent;
+  border-right: $triangle-size solid transparent;
+  border-top: $triangle-size solid;
+  border-top-color: inherit;
+}
+
+.triangle-left {
+  border-bottom: $triangle-size solid transparent;
+  border-right: $triangle-size solid;
+  border-right-color: inherit;
+  border-top: $triangle-size solid transparent;
+}
+
+.triangle-right {
+  border-bottom: $triangle-size solid transparent;
+  border-left: $triangle-size solid;
+  border-left-color: inherit;
+  border-top: $triangle-size solid transparent;
+}
+
+.triangle-top {
+  border-bottom: $triangle-size solid;
+  border-bottom-color: inherit;
+  border-left: $triangle-size solid transparent;
+  border-right: $triangle-size solid transparent;
+}
+

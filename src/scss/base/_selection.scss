@@ -1,0 +1,14 @@
+/**
+
+  selection
+-----------------------
+
+  These are styles related to cursor selection.
+
+  no-select: selection is disabled
+
+---------------------*/
+
+.no-select {
+  user-select: none;
+}

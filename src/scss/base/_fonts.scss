@@ -1,0 +1,62 @@
+/**
+
+  fonts
+-------------------------------------
+
+  Define the fonts used in this app and declare silent classes to be used in your CSS.
+
+-----------------------------------*/
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.eot');
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.eot?#iefix') format('embedded-opentype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.woff') format('woff'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.ttf') format('truetype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-reg.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.eot');
+  src: url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.eot?#iefix') format('embedded-opentype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.woff') format('woff'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.ttf') format('truetype'),
+       url('https://dzmqh46i6l1ir.cloudfront.net/public/proximanova-sbold.svg#proxima_nova_ltsemibold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* sans
+------------------------------------
+
+  This is your basic sans font.
+
+---------------------------------*/
+
+$sans-family: 'Proxima', sans-serif;
+
+
+/* serif
+-----------------------------------
+
+  This is your basic serif font.
+
+---------------------------------*/
+
+$serif-family: georgia, times, serif;
+
+
+/* weights
+----------------------------------
+
+  Various weights used with your fonts
+
+--------------------------------*/
+
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;

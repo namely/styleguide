@@ -1,9 +1,9 @@
 {
   "name": "namely-ui",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Namely UI: A SCSS and React component library for internal use at Namely",
   "private": true,
-  "main": "namely-ui.js",
+  "main": "dist/namely-ui.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/namely/styleguide"
@@ -11,7 +11,8 @@
   "bugs": "https://github.com/namely/styleguide/issues",
   "scripts": {
     "start": "gulp",
-    "test": "./node_modules/karma/bin/karma start --single-run=true"
+    "test": "./node_modules/karma/bin/karma start --single-run=true",
+    "prepublishOnly": "gulp build"
   },
   "files": [
     "CONTRIBUTING.md",
@@ -47,6 +48,9 @@
     },
     {
       "name": "Tyler Sargent"
+    },
+    {
+      "name": "Buck DeFore"
     }
   ],
   "dependencies": {

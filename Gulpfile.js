@@ -34,7 +34,7 @@ function onError(err) {
   this.emit('end');
 }
 
-gulp.task('build', ['icons', 'colors', 'styles', 'scripts']);
+gulp.task('build', ['icons', 'colors', 'styles', 'js', 'scripts']);
 
 gulp.task('clean', function() {
   return del(['dist/**/*']);
@@ -73,6 +73,19 @@ gulp.task('icons', function() {
       string_src('_icons.json', formattedGlyphs).pipe(gulp.dest("./src/lib/"));
     })
     .pipe(gulp.dest('././public/fonts/'));
+});
+
+gulp.task('js', function() {
+  browserify({
+    entries: './namely-ui.js',
+    extensions: ['.es6', '.js'],
+    debug: true
+  })
+    .transform(babelify)
+    .bundle()
+    .on('error', onError)
+    .pipe(source('namely-ui.js'))
+    .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('scripts', function() {

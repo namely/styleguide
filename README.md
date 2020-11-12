@@ -2,6 +2,11 @@
 
 This is the styleguide app to document all the components and patterns for Namely.
 
+Warning!
+---------------
+
+This library is no longer activately maintained.
+
 Getting Started
 ---------------
 

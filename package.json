@@ -1,8 +1,8 @@
 {
   "name": "@namely/ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Namely UI: A SCSS and React component library for internal use at Namely",
-  "main": "dist/namely-ui.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/namely/styleguide"
@@ -16,7 +16,6 @@
   "files": [
     "CONTRIBUTING.md",
     "dist",
-    "namely-ui.js",
     "README.md",
     "src/js/components"
   ],
@@ -68,13 +67,14 @@
     "@babel/preset-react": "^7.12.5",
     "ampersand-router": "^3.0.2",
     "babelify": "^10.0.0",
-    "browserify": "^13.0.0",
+    "browserify": "^17.0.0",
     "browserify-istanbul": "^0.2.1",
     "chai": "^3.4.1",
     "connect-history-api-fallback": "^1.1.0",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.2.0",
+    "gulp-babel": "^8.0.0",
     "gulp-connect": "^2.2.0",
     "gulp-cssnano": "^2.1.0",
     "gulp-header": "^1.2.2",

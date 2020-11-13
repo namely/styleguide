@@ -1,7 +1,7 @@
 import assign from 'lodash.assign';
 import React from 'react';
 import SimpleSelect from './simple-select';
-import { fieldProps, FieldBase} from '../base.es6';
+import { fieldProps, FieldBase} from '../base';
 import omit from '../../../utils/omit';
 
 const Type = React.PropTypes;

@@ -1,7 +1,7 @@
 import assign from 'lodash.assign';
 import React from 'react';
 import DatePicker from './date-picker';
-import { fieldProps, FieldBase } from '../base.es6';
+import { fieldProps, FieldBase } from '../base';
 import Moment from 'moment';
 import Tooltip from '../../../overlays/tooltip';
 import Overlay from '../../../overlays/overlay-click';

@@ -16,6 +16,7 @@ var scsslint = require('gulp-scss-lint');
 var size = require('gulp-size');
 var source = require('vinyl-source-stream');
 var sourcemaps = require('gulp-sourcemaps');
+var babel = require('gulp-babel');
 
 var fontName = 'icons';
 
@@ -76,15 +77,8 @@ gulp.task('icons', function() {
 });
 
 gulp.task('js', function() {
-  browserify({
-    entries: './namely-ui.js',
-    extensions: ['.es6', '.js'],
-    debug: true
-  })
-    .transform(babelify)
-    .bundle()
-    .on('error', onError)
-    .pipe(source('namely-ui.js'))
+  gulp.src('./src/js/components/**/*.*')
+    .pipe(babel())
     .pipe(gulp.dest('./dist'))
 });
 

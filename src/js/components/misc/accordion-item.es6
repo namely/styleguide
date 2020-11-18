@@ -1,15 +1,14 @@
 import React from 'react';
-
-const Type = React.PropTypes;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 
   displayName: "AccordionItem",
 
   propTypes: {
-    isOpen: Type.bool,
-    title: Type.node.isRequired,
-    containerClasses: Type.arrayOf(Type.string)
+    isOpen: PropTypes.bool,
+    title: PropTypes.node.isRequired,
+    containerClasses: PropTypes.arrayOf(PropTypes.string)
   },
 
   getDefaultProps() {

@@ -1,10 +1,9 @@
 import assign from 'lodash.assign';
 import React from 'react';
+import PropTypes from 'prop-types';
 import SimpleSelect from './simple-select';
 import { fieldProps, FieldBase} from '../base';
 import omit from '../../../utils/omit';
-
-const Type = React.PropTypes;
 
 class SelectField extends FieldBase {
 
@@ -37,8 +36,8 @@ class SelectField extends FieldBase {
 SelectField.displayName = "SelectField";
 
 SelectField.propTypes = assign({
-  includeBlank: Type.oneOfType([Type.bool, Type.string]),
-  options: Type.oneOfType([Type.object, Type.array]).isRequired
+  includeBlank: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  options: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired
 }, fieldProps);
 
 export default SelectField;

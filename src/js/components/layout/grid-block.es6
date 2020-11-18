@@ -1,7 +1,6 @@
 import 'core-js/shim';
 import React from 'react';
-
-const Type = React.PropTypes;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 

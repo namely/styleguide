@@ -1,13 +1,12 @@
 import assign from 'lodash.assign';
 import React from 'react';
+import PropTypes from 'prop-types';
 import DatePicker from './date-picker';
 import { fieldProps, FieldBase } from '../base';
 import Moment from 'moment';
 import Tooltip from '../../../overlays/tooltip';
 import Overlay from '../../../overlays/overlay-click';
 import omit from '../../../utils/omit';
-
-const Type = React.PropTypes;
 
 // Note: The value of date.month() for 1/1/2015 is 0, not 1
 
@@ -156,10 +155,10 @@ class DateField extends FieldBase {
 DateField.displayName = "DateField";
 
 DateField.propTypes = assign({
-  dateFormat: Type.oneOf(validDateFormats).isRequired,
-  includeMaxMinBounds: Type.bool,
-  maxDate: Type.oneOfType([Type.object, Type.string, Type.number]),
-  minDate: Type.oneOfType([Type.object, Type.string, Type.number])
+  dateFormat: PropTypes.oneOf(validDateFormats).isRequired,
+  includeMaxMinBounds: PropTypes.bool,
+  maxDate: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.number]),
+  minDate: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.number])
 }, fieldProps);
 
 export default DateField;

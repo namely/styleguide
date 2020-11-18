@@ -1,20 +1,19 @@
 import React from 'react';
-
-const Type = React.PropTypes;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 
   displayName: "Button",
 
   propTypes: {
-   type: Type.oneOf([null, 'danger', 'secondary', 'baby', 'previous', 'next']),
-   label: Type.string,
-   size: Type.oneOf([null, 'sm']),
-   disabled: Type.bool,
-   link: Type.bool,
-   extraClasses: Type.arrayOf(Type.string),
-   icon: Type.string,
-   onClick: Type.func,
+   type: PropTypes.oneOf([null, 'danger', 'secondary', 'baby', 'previous', 'next']),
+   label: PropTypes.string,
+   size: PropTypes.oneOf([null, 'sm']),
+   disabled: PropTypes.bool,
+   link: PropTypes.bool,
+   extraClasses: PropTypes.arrayOf(PropTypes.string),
+   icon: PropTypes.string,
+   onClick: PropTypes.func,
   },
 
   getDefaultProps: function() {

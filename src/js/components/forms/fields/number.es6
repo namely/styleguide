@@ -1,9 +1,8 @@
 import assign from 'lodash.assign';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { fieldProps, FieldBase} from './base';
 import omit from '../../utils/omit';
-
-const Type = React.PropTypes;
 
 class NumberField extends FieldBase {
 
@@ -58,7 +57,7 @@ class NumberField extends FieldBase {
 NumberField.displayName = "NumberField";
 
 NumberField.propTypes = assign({
-  units: Type.string
+  units: PropTypes.string
 }, fieldProps);
 
 export default NumberField;

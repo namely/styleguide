@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const {
-  PropTypes: Type,
   cloneElement,
 } = React;
 
@@ -16,17 +16,17 @@ export default React.createClass({
   displayName: "Tooltip",
 
   propTypes: {
-    bottom: Type.number,
-    caretPosition: Type.oneOf(caretPositions),
-    closeOverlay: Type.func,
-    content: Type.node.isRequired,
-    extraClasses: Type.array,
-    height: Type.oneOf(['auto', Type.number]),
-    left: Type.number,
-    right: Type.number,
-    top: Type.number,
-    width: Type.oneOf(['auto', Type.number]),
-    zIndex: Type.number
+    bottom: PropTypes.number,
+    caretPosition: PropTypes.oneOf(caretPositions),
+    closeOverlay: PropTypes.func,
+    content: PropTypes.node.isRequired,
+    extraClasses: PropTypes.array,
+    height: PropTypes.oneOf(['auto', PropTypes.number]),
+    left: PropTypes.number,
+    right: PropTypes.number,
+    top: PropTypes.number,
+    width: PropTypes.oneOf(['auto', PropTypes.number]),
+    zIndex: PropTypes.number
   },
 
   getDefaultProps() {

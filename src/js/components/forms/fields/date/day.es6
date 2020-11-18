@@ -1,17 +1,16 @@
 import React from 'react';
-
-const Type = React.PropTypes;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 
   displayName: "Day",
 
   propTypes: {
-    onChangeDate: Type.func.isRequired,
-    date: Type.object.isRequired,
-    disabled: Type.bool,
-    selected: Type.bool,
-    week: Type.number.isRequired
+    onChangeDate: PropTypes.func.isRequired,
+    date: PropTypes.object.isRequired,
+    disabled: PropTypes.bool,
+    selected: PropTypes.bool,
+    week: PropTypes.number.isRequired
   },
 
   getDefaultProps() {

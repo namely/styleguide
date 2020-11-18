@@ -1,21 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Overlay from '../../../overlays/overlay-click';
-
-const Type = React.PropTypes;
 
 export default React.createClass({
 
   displayName: "SimpleSelect",
 
   propTypes: {
-    disabled: Type.bool,
-    hasError: Type.bool,
-    includeBlank: Type.bool,
-    name: Type.string,
-    onChange: Type.func,
-    options: Type.oneOfType([Type.object, Type.array]).isRequired,
-    placeholder: Type.string,
-    value: Type.oneOfType([Type.string, Type.number])
+    disabled: PropTypes.bool,
+    hasError: PropTypes.bool,
+    includeBlank: PropTypes.bool,
+    name: PropTypes.string,
+    onChange: PropTypes.func,
+    options: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+    placeholder: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   },
 
   getDefaultProps() {

@@ -1,19 +1,18 @@
 import DayPicker from './day-picker'
 import MonthPicker from './month-picker'
 import React from 'react';
-
-const Type = React.PropTypes;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 
   displayName: "DatePicker",
 
   propTypes: {
-    closeTooltip: Type.func,
-    date: Type.object.isRequired,
-    maxDate: Type.object,
-    minDate: Type.object,
-    onChangeDate: Type.func.isRequired
+    closeTooltip: PropTypes.func,
+    date: PropTypes.object.isRequired,
+    maxDate: PropTypes.object,
+    minDate: PropTypes.object,
+    onChangeDate: PropTypes.func.isRequired
   },
 
   getDefaultProps() {

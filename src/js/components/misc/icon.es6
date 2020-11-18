@@ -1,16 +1,15 @@
 import React from 'react';
-
-const Type = React.PropTypes;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 
   displayName: "Icon",
 
   propTypes: {
-    name: Type.string.isRequired,
-    extraClasses: Type.arrayOf(Type.string),
-    size: Type.number,
-    top: Type.number
+    name: PropTypes.string.isRequired,
+    extraClasses: PropTypes.arrayOf(PropTypes.string),
+    size: PropTypes.number,
+    top: PropTypes.number
   },
 
   getDefaultProps() {

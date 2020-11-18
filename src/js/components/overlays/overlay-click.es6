@@ -1,20 +1,16 @@
-import React from 'react';
+import React, { cloneElement } from 'react';
 import ReactDOM from 'react-dom';
-
-const { 
-  PropTypes: Type,
-  cloneElement
- } = React;
+import PropTypes from 'prop-types';
 
 export default React.createClass({
 
   displayName: "OverlayClick",
 
   propTypes: {
-    content: Type.node.isRequired,
-    onClick: Type.func,
-    onClose: Type.func,
-    onOpen: Type.func
+    content: PropTypes.node.isRequired,
+    onClick: PropTypes.func,
+    onClose: PropTypes.func,
+    onOpen: PropTypes.func
   },
 
   getDefaultProps() {

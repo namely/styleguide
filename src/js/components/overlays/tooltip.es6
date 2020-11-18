@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const {
   PropTypes: Type,
@@ -101,19 +100,11 @@ export default React.createClass({
 
   render() {
     return (
-      <ReactCSSTransitionGroup 
-        transitionName={`anim-fade-${this.direction()}`}
-        transitionAppear={true}
-        transitionAppearTimeout={500}
-        transitionEnterTimeout={500}
-        transitionLeaveTimeout={300}
-      >
-        <div className={this.classes()} style={this.style()}>
-          <div className={this.triangleClasses() + ' absolute bc-blue-95 blue-95'}></div>
-          {cloneElement(this.props.content)}
-          <div className="clearfix"></div>
-        </div>
-      </ReactCSSTransitionGroup>
+      <div className={this.classes()} style={this.style()}>
+        <div className={this.triangleClasses() + ' absolute bc-blue-95 blue-95'}></div>
+        {cloneElement(this.props.content)}
+        <div className="clearfix"></div>
+      </div>
     );
   }
 });

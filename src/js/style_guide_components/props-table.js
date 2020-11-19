@@ -1,6 +1,7 @@
 import React from 'react';
+import createClass from 'create-react-class';
 
-export default React.createClass({
+export default createClass({
 
   displayName: "PropsTable",
 
@@ -16,6 +17,5 @@ export default React.createClass({
           )}
         </tbody>
       </table>
-
   }
 });

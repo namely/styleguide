@@ -8,8 +8,8 @@ import {
   TextAreaField
 } from '../components/forms/fields/index';
 import EditLabel from '../components/forms/edit-label';
-import Moment from 'moment';
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 
 var options = [
@@ -36,7 +36,7 @@ function _onFocus() {
   console.log("Focus");
 }
 
-export default React.createClass({
+export default createClass({
   displayName: "FormsPage",
 
   getInitialState() {

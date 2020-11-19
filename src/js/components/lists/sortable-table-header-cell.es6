@@ -1,9 +1,5 @@
-import React from 'react';
-
-const {
-  Children,
-  PropTypes
-} = React;
+import React, { Children } from 'react';
+import PropTypes from 'prop-types';
 
 class SortableTableHeaderCell extends React.Component {
   constructor(props, context) {

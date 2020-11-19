@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 const {
   cloneElement,
@@ -12,7 +13,7 @@ const caretPositions = [
   "left-bottom", "left-center", "left-top"
 ];
 
-export default React.createClass({
+export default createClass({
   displayName: "Tooltip",
 
   propTypes: {

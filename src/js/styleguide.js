@@ -1,6 +1,7 @@
 import React from 'react';
+import createClass from 'create-react-class';
 
-export default React.createClass({
+export default createClass({
   displayName: "Styleguide",
 
   listComponentTitles() {

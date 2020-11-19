@@ -6,9 +6,7 @@ import ViewStore from './stores/view-store';
 import ViewActions from './actions/view-actions';
 
 const {
-  createClass,
-  createElement,
-  render,
+  createClass
 } = React;
 
 

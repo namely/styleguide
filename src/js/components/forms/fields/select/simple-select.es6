@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 import Overlay from '../../../overlays/overlay-click';
 
-export default React.createClass({
+export default createClass({
 
   displayName: "SimpleSelect",
 

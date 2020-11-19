@@ -2,8 +2,9 @@ import DayPicker from './day-picker'
 import MonthPicker from './month-picker'
 import React from 'react';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
-export default React.createClass({
+export default createClass({
 
   displayName: "DatePicker",
 

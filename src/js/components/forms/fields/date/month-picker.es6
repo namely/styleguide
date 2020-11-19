@@ -1,6 +1,7 @@
 import Moment from 'moment'
 import React from 'react';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 var months = ["January", "February", "March", "April",
               "May", "June", "July", "August",
@@ -8,7 +9,7 @@ var months = ["January", "February", "March", "April",
 
 var weekAbbvs = ["SU", "MO", "TU", "WE", "TH", "FR", "SA"];
 
-export default React.createClass({
+export default createClass({
 
   displayName: "MonthPicker",
 

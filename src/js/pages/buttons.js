@@ -1,9 +1,10 @@
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 import Button from '../components/buttons/button';
 import ButtonGroup from '../components/buttons/button-group';
 
-export default React.createClass({
+export default createClass({
   displayName: "ButtonsPage",
 
   _logClick(e) {

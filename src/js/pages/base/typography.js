@@ -1,6 +1,6 @@
 import React from 'react';
 
-const { PropTypes, createClass } = React;
+const { createClass } = React;
 
 export default createClass({
   displayName: "Typography",

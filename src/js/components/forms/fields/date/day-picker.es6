@@ -2,8 +2,9 @@ import Day from './day';
 import Moment from 'moment';
 import React from 'react';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
-export default React.createClass({
+export default createClass({
 
   displayName: "DayPicker",
 

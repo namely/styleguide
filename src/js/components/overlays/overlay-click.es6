@@ -1,8 +1,9 @@
 import React, { cloneElement } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
-export default React.createClass({
+export default createClass({
 
   displayName: "OverlayClick",
 

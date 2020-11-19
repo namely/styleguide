@@ -1,9 +1,10 @@
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 import Colors from './colors';
 import Typography from './base/typography';
 
-export default React.createClass({
+export default createClass({
   displayName: "BasePage",
 
   render() {

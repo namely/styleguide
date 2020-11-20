@@ -1,9 +1,5 @@
 // react
-import React from 'react';
-
-const {
-  Children
-} = React;
+import React, { Children } from 'react';
 
 // sub components
 import HeaderCell from './sortable-table-header-cell';

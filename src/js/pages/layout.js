@@ -1,13 +1,9 @@
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 import GridBlock from '../components/layout/grid-block';
 import Flexbox from './layout/flexbox';
 import Spacing from './layout/spacing';
-
-const {
-  createClass
-} = React;
-
 
 export default createClass({
   displayName: "LayoutPage",

@@ -1,6 +1,5 @@
 import React from 'react';
-
-const { createClass } = React;
+import createClass from 'create-react-class';
 
 export default createClass({
   displayName: "Typography",

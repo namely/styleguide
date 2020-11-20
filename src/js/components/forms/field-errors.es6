@@ -1,4 +1,5 @@
-import React, { createClass } from 'react';
+import React from 'react';
+import createClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Icon from '../misc/icon';
 

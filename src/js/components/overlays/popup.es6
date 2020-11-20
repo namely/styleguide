@@ -1,5 +1,6 @@
-import React, { createClass, Children, cloneElement } from 'react';
+import React, { Children, cloneElement } from 'react';
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 export default createClass({
 

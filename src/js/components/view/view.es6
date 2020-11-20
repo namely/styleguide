@@ -1,14 +1,10 @@
 import React from 'react';
+import createClass from 'create-react-class';
 
 import ActionBar from './bars/action-bar';
 
 import ViewStore from './stores/view-store';
 import ViewActions from './actions/view-actions';
-
-const {
-  createClass
-} = React;
-
 
 var View = createClass({
 

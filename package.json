@@ -10,7 +10,7 @@
   "bugs": "https://github.com/namely/styleguide/issues",
   "scripts": {
     "start": "gulp",
-    "test": "./node_modules/karma/bin/karma start --single-run=true",
+    "test": "npx karma start --single-run=true",
     "prepublishOnly": "gulp build"
   },
   "files": [

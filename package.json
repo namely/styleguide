@@ -1,6 +1,6 @@
 {
   "name": "@namely/ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Namely UI: A SCSS and React component library for internal use at Namely",
   "main": "dist/index.js",
   "repository": {

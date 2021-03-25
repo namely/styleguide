@@ -13,24 +13,24 @@ Getting Started
 1. Clone the repo and ```cd``` into the directory
 2. Install dependencies
 ```shell
-$ npm install
-$ npm install -g karma-cli
+$ yarn
+$ yarn global add karma-cli
 $ gem install scss-lint
 ```
 3. Serve app
 ```shell
-$ npm start
+$ yarn start
 ```
 To serve on a port other than 8080:
 ```shell
-$ gulp --port 8081
+$ npx gulp --port 8081
 ```
 
 Testing
 -------
 To run test suite once:
 ```shell
-$ npm test
+$ yarn test
 ```
 
 To keep test suite running and watching:

@@ -14,7 +14,6 @@ Getting Started
 2. Install dependencies
 ```shell
 $ npm install
-$ npm install -g karma-cli
 $ gem install scss-lint
 ```
 3. Serve app
@@ -35,10 +34,10 @@ $ npm test
 
 To keep test suite running and watching:
 ```shell
-$ karma start
+$ npx karma start
 ```
 
 With Chrome as browser (recommended):
 ```shell
-karma start --browsers Chrome
+npx karma start --browsers Chrome
 ```

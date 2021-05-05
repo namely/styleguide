@@ -1,6 +1,6 @@
 {
   "name": "@namely/ui",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Namely UI: A SCSS and React component library for internal use at Namely",
   "main": "dist/index.js",
   "repository": {
@@ -53,7 +53,6 @@
   ],
   "dependencies": {
     "alt": "^0.17.1",
-    "core-js": "^0.9.6",
     "lodash": "^4.0.1",
     "lodash.assign": "^3.2.0",
     "moment": "^2.10.3",

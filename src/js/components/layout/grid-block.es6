@@ -1,4 +1,3 @@
-import 'core-js/shim';
 import React from 'react';
 import PropTypes from 'prop-types';
 import createClass from 'create-react-class';

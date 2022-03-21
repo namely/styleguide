@@ -1,4 +1,7 @@
 # Namely Styleguide (a.k.a Namely-UI / Namely-Bootstrap)
+ 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5b20524c922b4252ac2766ca667f46ad)](https://app.codacy.com/gh/namely/styleguide/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/5b20524c922b4252ac2766ca667f46ad)](https://app.codacy.com/gh/namely/styleguide/dashboard)
 
 This is the styleguide app to document all the components and patterns for Namely.
 

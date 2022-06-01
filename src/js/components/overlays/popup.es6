@@ -1,18 +1,13 @@
-import React from 'react';
-
-const {
-  createClass,
-  PropTypes : Type,
-  Children,
-  cloneElement
-} = React;
+import React, { Children, cloneElement } from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 export default createClass({
 
   displayName: 'Popup',
 
   propTypes: {
-    width: Type.oneOf([200, 300, 400])
+    width: PropTypes.oneOf([200, 300, 400])
   },
 
   getDefaultProps() {

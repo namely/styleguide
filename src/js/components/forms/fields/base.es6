@@ -1,24 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ContextualHelp from '../contextual-help';
 import FieldErrors from '../field-errors';
 
-const Type = React.PropTypes;
-
 var fieldProps = {
-  contextualHelp: Type.oneOfType([Type.object, Type.string, Type.array]),
-  disabled: Type.bool,
-  errors: Type.array,
-  extraClasses: Type.array,
-  defaultValue: Type.oneOfType([Type.object, Type.string, Type.number, Type.array]),
-  label: Type.string,
-  name: Type.string.isRequired,
-  onBlur: Type.func,
-  onChange: Type.func,
-  onFocus: Type.func,
-  onKeyUp: Type.func,
-  placeholder: Type.string,
-  readOnly: Type.bool,
-  required: Type.bool
+  contextualHelp: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.array]),
+  disabled: PropTypes.bool,
+  errors: PropTypes.array,
+  extraClasses: PropTypes.array,
+  defaultValue: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.number, PropTypes.array]),
+  label: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onKeyUp: PropTypes.func,
+  placeholder: PropTypes.string,
+  readOnly: PropTypes.bool,
+  required: PropTypes.bool
 };
 
 class FieldBase extends React.Component {

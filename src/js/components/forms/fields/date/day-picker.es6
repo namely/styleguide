@@ -1,20 +1,20 @@
 import Day from './day';
 import Moment from 'moment';
 import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
-const Type = React.PropTypes;
-
-export default React.createClass({
+export default createClass({
 
   displayName: "DayPicker",
 
   propTypes: {
-    date: Type.object.isRequired,
-    maxDate: Type.object,
-    minDate: Type.object,
-    onChangeDate: Type.func.isRequired,
-    visibleMonth: Type.number.isRequired,
-    visibleYear: Type.number.isRequired
+    date: PropTypes.object.isRequired,
+    maxDate: PropTypes.object,
+    minDate: PropTypes.object,
+    onChangeDate: PropTypes.func.isRequired,
+    visibleMonth: PropTypes.number.isRequired,
+    visibleYear: PropTypes.number.isRequired
   },
 
   arrayByBoundary(start, end) {

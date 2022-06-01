@@ -1,9 +1,8 @@
 import assign from 'lodash.assign';
 import React from 'react';
-import { fieldProps, FieldBase} from './base.es6';
+import PropTypes from 'prop-types';
+import { fieldProps, FieldBase} from './base';
 import omit from '../../utils/omit';
-
-const Type = React.PropTypes;
 
 class TextAreaField extends FieldBase {
   constructor() {
@@ -38,7 +37,7 @@ class TextAreaField extends FieldBase {
 TextAreaField.displayName = "TextAreaField";
 
 TextAreaField.propTypes = assign({
-  expandable: Type.bool
+  expandable: PropTypes.bool
 }, fieldProps);
 
 TextAreaField.defaultProps = assign({

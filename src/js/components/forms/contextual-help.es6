@@ -1,10 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Tooltip from '../overlays/tooltip';
 import Overlay from '../overlays/overlay-click';
-
-const {
-  PropTypes : Type
-} = React;
 
 const iconStyles = {
   bottom: '1px',
@@ -40,8 +37,8 @@ class ContextualHelp extends React.Component {
 }
 
 ContextualHelp.propTypes = {
-  color: Type.string,
-  extraClasses: Type.array
+  color: PropTypes.string,
+  extraClasses: PropTypes.array
 };
 
 ContextualHelp.defaultProps = {

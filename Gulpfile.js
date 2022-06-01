@@ -16,6 +16,7 @@ var scsslint = require('gulp-scss-lint');
 var size = require('gulp-size');
 var source = require('vinyl-source-stream');
 var sourcemaps = require('gulp-sourcemaps');
+var babel = require('gulp-babel');
 
 var fontName = 'icons';
 
@@ -34,7 +35,7 @@ function onError(err) {
   this.emit('end');
 }
 
-gulp.task('build', ['icons', 'colors', 'styles', 'scripts']);
+gulp.task('build', ['icons', 'colors', 'styles', 'js', 'scripts']);
 
 gulp.task('clean', function() {
   return del(['dist/**/*']);
@@ -73,6 +74,12 @@ gulp.task('icons', function() {
       string_src('_icons.json', formattedGlyphs).pipe(gulp.dest("./src/lib/"));
     })
     .pipe(gulp.dest('././public/fonts/'));
+});
+
+gulp.task('js', function() {
+  gulp.src('./src/js/components/**/*.*')
+    .pipe(babel())
+    .pipe(gulp.dest('./dist'))
 });
 
 gulp.task('scripts', function() {

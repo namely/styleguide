@@ -1,5 +1,7 @@
 import Moment from 'moment'
 import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 var months = ["January", "February", "March", "April",
               "May", "June", "July", "August",
@@ -7,18 +9,16 @@ var months = ["January", "February", "March", "April",
 
 var weekAbbvs = ["SU", "MO", "TU", "WE", "TH", "FR", "SA"];
 
-const Type = React.PropTypes;
-
-export default React.createClass({
+export default createClass({
 
   displayName: "MonthPicker",
 
   propTypes: {
-    maxDate: Type.object,
-    minDate: Type.object,
-    onChangeMonth: Type.func.isRequired,
-    visibleMonth: Type.number.isRequired,
-    visibleYear: Type.number.isRequired
+    maxDate: PropTypes.object,
+    minDate: PropTypes.object,
+    onChangeMonth: PropTypes.func.isRequired,
+    visibleMonth: PropTypes.number.isRequired,
+    visibleYear: PropTypes.number.isRequired
   },
 
   goToNextMonth(e) {

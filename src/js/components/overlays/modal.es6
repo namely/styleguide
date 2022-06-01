@@ -1,18 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
-const Type = React.PropTypes;
-
-export default React.createClass({
+export default createClass({
 
   displayName: "Modal",
 
   propTypes: {
-    zIndex: Type.number,
-    contentColumns: Type.number,
-    contentHeight: Type.number,
-    contentMinHeight: Type.number,
-    disableClickBackground: Type.bool,
-    closeModal: Type.func
+    zIndex: PropTypes.number,
+    contentColumns: PropTypes.number,
+    contentHeight: PropTypes.number,
+    contentMinHeight: PropTypes.number,
+    disableClickBackground: PropTypes.bool,
+    closeModal: PropTypes.func
   },
 
   getDefaultProps() {

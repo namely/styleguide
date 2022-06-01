@@ -1,6 +1,6 @@
 // The Flexbox Documentation for the layout page
 import React from 'react';
-import { createClass, DOM as D, PropTypes } from 'react';
+import createClass from 'create-react-class';
 
 export default createClass({
   displayName: "Flexbox",

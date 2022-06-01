@@ -1,9 +1,10 @@
 import React from 'react';
 import localLinks from 'local-links';
+import createClass from 'create-react-class';
 
 import View from './components/view/view';
 
-export default React.createClass({
+export default createClass({
   displayName: 'NavContainer',
 
   componentDidMount() {

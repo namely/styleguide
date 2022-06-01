@@ -1,9 +1,10 @@
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 import Icon from '../components/misc/icon';
 import IconData from '../../lib/_icons';
 
-export default React.createClass({
+export default createClass({
   displayName: "IconsPage",
 
   render() {

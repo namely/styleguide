@@ -4,9 +4,9 @@ machine:
 
 dependencies:
   override:
-    - npm install
+    - yarn install
     - gem install scss-lint
-    - npm test
+    - yarn test
 
 test:
   override:
@@ -16,8 +16,8 @@ deployment:
   production:
     branch: master
     commands:
-      - npm install node-slack-cli -g
-      - npm rebuild node-sass
+      - yarn install node-slack-cli -g
+      - yarn rebuild node-sass
       - ./node_modules/.bin/gulp build
       - ./node_modules/.bin/surge --project ./public --domain namely.surge.sh
       - slack -c namely-ui -m "Deployed style guide to http://namely.surge.sh"

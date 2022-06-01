@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 const {
-  PropTypes: Type,
   cloneElement,
 } = React;
 
@@ -13,21 +13,21 @@ const caretPositions = [
   "left-bottom", "left-center", "left-top"
 ];
 
-export default React.createClass({
+export default createClass({
   displayName: "Tooltip",
 
   propTypes: {
-    bottom: Type.number,
-    caretPosition: Type.oneOf(caretPositions),
-    closeOverlay: Type.func,
-    content: Type.node.isRequired,
-    extraClasses: Type.array,
-    height: Type.oneOf(['auto', Type.number]),
-    left: Type.number,
-    right: Type.number,
-    top: Type.number,
-    width: Type.oneOf(['auto', Type.number]),
-    zIndex: Type.number
+    bottom: PropTypes.number,
+    caretPosition: PropTypes.oneOf(caretPositions),
+    closeOverlay: PropTypes.func,
+    content: PropTypes.node.isRequired,
+    extraClasses: PropTypes.array,
+    height: PropTypes.oneOf(['auto', PropTypes.number]),
+    left: PropTypes.number,
+    right: PropTypes.number,
+    top: PropTypes.number,
+    width: PropTypes.oneOf(['auto', PropTypes.number]),
+    zIndex: PropTypes.number
   },
 
   getDefaultProps() {
@@ -101,19 +101,11 @@ export default React.createClass({
 
   render() {
     return (
-      <ReactCSSTransitionGroup 
-        transitionName={`anim-fade-${this.direction()}`}
-        transitionAppear={true}
-        transitionAppearTimeout={500}
-        transitionEnterTimeout={500}
-        transitionLeaveTimeout={300}
-      >
-        <div className={this.classes()} style={this.style()}>
-          <div className={this.triangleClasses() + ' absolute bc-blue-95 blue-95'}></div>
-          {cloneElement(this.props.content)}
-          <div className="clearfix"></div>
-        </div>
-      </ReactCSSTransitionGroup>
+      <div className={this.classes()} style={this.style()}>
+        <div className={this.triangleClasses() + ' absolute bc-blue-95 blue-95'}></div>
+        {cloneElement(this.props.content)}
+        <div className="clearfix"></div>
+      </div>
     );
   }
 });

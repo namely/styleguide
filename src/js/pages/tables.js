@@ -1,8 +1,9 @@
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 import Sortable from '../components/lists/sortable';
 
-export default React.createClass({
+export default createClass({
   displayName: "TablesPage",
 
   render() {

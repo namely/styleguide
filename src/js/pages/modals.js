@@ -1,9 +1,10 @@
 import React from 'react';
+import createClass from 'create-react-class';
 import Styleguide from '../styleguide';
 import PropsTable from '../style_guide_components/props-table';
 import Modal from '../components/overlays/modal';
 
-export default React.createClass({
+export default createClass({
 
   displayName: "ModalsPage",
 

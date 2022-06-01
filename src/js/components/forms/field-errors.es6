@@ -1,17 +1,14 @@
 import React from 'react';
+import createClass from 'create-react-class';
+import PropTypes from 'prop-types';
 import Icon from '../misc/icon';
-
-const {
-  createClass,
-  PropTypes : Type
-} = React;
 
 export default createClass({
   displayName: 'fieldErrors',
 
   propTypes: {
-    errors: Type.array,
-    extraClasses: Type.array
+    errors: PropTypes.array,
+    extraClasses: PropTypes.array
   },
 
   classes() {

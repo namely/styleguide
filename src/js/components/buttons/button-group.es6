@@ -1,15 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
-const Type = React.PropTypes;
-
-export default React.createClass({
+export default createClass({
 
   displayName: "ButtonGroup",
 
   propTypes: {
-   type: Type.oneOf(['actions']),
-   children: Type.node.isRequired,
-   extraClasses: Type.arrayOf(Type.string)
+   type: PropTypes.oneOf(['actions']),
+   children: PropTypes.node.isRequired,
+   extraClasses: PropTypes.arrayOf(PropTypes.string)
   },
 
   createClass: function(value) {

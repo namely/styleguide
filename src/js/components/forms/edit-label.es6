@@ -1,25 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 import Icon from '../misc/icon';
 import Popup from '../overlays/popup';
 import FieldErrors from './field-errors';
 import OverlayClick from '../overlays/overlay-click';
-
-const {
-  createClass,
-  PropTypes: Type
-} = React;
 
 export default createClass({
 
   displayName: 'EditLabel',
 
   propTypes: {
-    label: Type.string.isRequired,
-    placeholder: Type.string,
-    isValid: Type.func,
-    errorMessage: Type.string,
-    onSave: Type.func.isRequired,
-    onDelete: Type.func.isRequired
+    label: PropTypes.string.isRequired,
+    placeholder: PropTypes.string,
+    isValid: PropTypes.func,
+    errorMessage: PropTypes.string,
+    onSave: PropTypes.func.isRequired,
+    onDelete: PropTypes.func.isRequired
   },
 
   getInitialState() {

@@ -1,8 +1,7 @@
 import React from 'react';
-import { fieldProps, FieldBase} from './base.es6';
+import PropTypes from 'prop-types';
+import { fieldProps, FieldBase} from './base';
 import omit from '../../utils/omit';
-
-const Type = React.PropTypes;
 
 class TextField extends FieldBase {
 

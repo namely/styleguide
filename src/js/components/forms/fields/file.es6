@@ -1,12 +1,8 @@
 import assign from 'lodash.assign';
-import React from 'react';
-import { fieldProps, FieldBase} from './base.es6';
+import React, { createChildren } from 'react';
+import PropTypes from 'prop-types';
+import { fieldProps, FieldBase} from './base';
 import omit from '../../utils/omit';
-
-const {
-  Children,
-  PropTypes : Type,
-} = React;
 
 class FileField extends FieldBase {
 
@@ -77,9 +73,9 @@ class FileField extends FieldBase {
 FileField.displayName = "FileField";
 
 FileField.propTypes = assign({
-  buttonClasses: Type.array,
-  buttonText: Type.string,
-  icon: Type.string
+  buttonClasses: PropTypes.array,
+  buttonText: PropTypes.string,
+  icon: PropTypes.string
 }, fieldProps);
 
 FileField.defaultProps = assign({
